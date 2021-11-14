@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Script -->
+    <script type="text/javascript">
+        function fn1() 
+        {
+            var str = document.getElementById("text1").value;
+            var result = document.getElementById("resultat")
+
+            if (str == 'mas') {result.innerHTML = 'text'} 
+            else if(str == 'mad') {result.innerHTML = 'text'}
+            
+            else{result.innerHTML = 'noo'}
+        }
+    </script>
+
+
+    <!-- HTML -->
+    <div id="block">
+        <div class="in">
+            <input id="text1" placeholder="Your id">
+            <button onclick="fn1()" id="btn1">click</button>
+        </div>
+        <div class="divide"></div>
+        <div id="resultat"></div>
+    </div>
+
+    <!-- CSS3 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            border: none;
+        }
+        body{
+            background: #202324;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            padding: 0
+        }
+        #block{
+            background: rgba(24,26,27, .3);
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 90%;
+        }
+        #text1{
+            background: #181A1B;
+            padding: 20px 10px;
+            border-radius: 10px;
+            outline: none;
+            color: #D4D1CB;
+            width: 70%;
+        }
+        #btn1{
+            background: #181A1B;
+            border-radius: 10px;
+            outline: none;
+            color: #D4D1CB;
+            padding: 15px 10px;
+            cursor: pointer;
+        }
+        .divide{
+            width: 70%;
+            height: 1px;
+            background: #202324;
+            margin: 20px 14%;
+            display: flex;
+        }
+        #resultat{
+            color: #D4D1CB;
+        }
+    </style>
+</body>
+</html>
